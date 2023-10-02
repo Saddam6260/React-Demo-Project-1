@@ -1,14 +1,14 @@
 form{
     display: flex;
     flex-flow: column;
-    row-gap: 15px;
+    row-gap: 10px;
     align-items: start;
 }
 form .input-wrap{
     display: flex;
     flex-flow: column wrap;
     row-gap: 5px;
-    width: 80%;
+    width: 100%;
 }
 form .input-wrap input[type="text"]{
     padding: 4px 5px;
@@ -18,5 +18,12 @@ form .input-wrap input[type='text']:focus{
     outline: none;
     background-color: #caf0f8;
     border-radius: 0px;
+}
+
+.input-wrap.isvalid input{
+    background-color: #ffccd5;
+}
+.input-wrap.isvalid label{
+    color: red;
 }
 

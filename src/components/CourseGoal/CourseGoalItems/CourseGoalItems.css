@@ -1,0 +1,9 @@
+.goalItem{
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #9b2226;
+}
+
+.goalItem h5{
+    color: white;
+}
