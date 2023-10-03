@@ -8,15 +8,14 @@
 }
 
 /* Variable */
-:root {
-    --pink: #ffafcc;
-}
+   
 
 /* Common Style */
 button{
     border: none;
     background: none;
     font-family: "Croissant One", cursive;
+    cursor: pointer;
 }
 ul{
     list-style: none;

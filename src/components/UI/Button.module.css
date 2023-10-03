@@ -1,0 +1,11 @@
+.button{
+    background-color: var(--darkred);
+    color: white;
+    padding: 8px 15px;
+    margin-top: 20px;
+}
+
+.button:active,.button:hover{
+    background-color: var(--extradarkred);
+    color: white;
+}

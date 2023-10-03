@@ -1,0 +1,5 @@
+.goalitem{
+    background-color: var(--darkred);
+    color: white;
+    padding: 8px 15px;
+}

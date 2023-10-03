@@ -1,15 +1,19 @@
-import React from "react";
-
-import CourseGoalForm from "./components/CourseGoal/CourseGoalInput/CourseGoalForm";
 import "./App.css";
+import CourseGoalInput from "./components/CourseGoal/Coursegoalform/CourseGoalInput";
+import CourseGoalList from "./components/CourseGoal/Coursegoallist/CourseGoalList";
 
-function App() {
-  
+const App = () => {
+  const goalItems = [
+    { id: "g1", text: "Finish this course before 10 october" },
+    { id: "g2", text: "Practice project everyday" },
+  ];
+
   return (
     <div className="container">
-      <CourseGoalForm/>
+      <CourseGoalInput />
+      <CourseGoalList items={goalItems} />
     </div>
   );
-}
+};
 
 export default App;

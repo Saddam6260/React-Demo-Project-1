@@ -1,0 +1,28 @@
+.form-wrap{
+    width: 60%;
+    max-width: 400px;
+    background-color: var(--pink);
+    padding: 10px 20px;
+    margin-bottom: 30px;
+}
+
+.input-wrap{
+    display: flex;
+    flex-flow: column;
+    row-gap: 3px;
+}
+
+.input-wrap input{
+    padding: 5px;
+    border: none;
+    border: .5px solid black;
+}
+
+.input-wrap input:focus{
+    background-color: #bde0fe;
+    outline: none;
+}
+
+.form-wrap.inValid .input-wrap input{
+    background-color: var(--darkred);
+}

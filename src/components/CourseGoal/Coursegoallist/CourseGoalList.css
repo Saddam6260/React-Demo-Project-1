@@ -1,0 +1,10 @@
+.goals-wrap{
+    width: 60%;
+    max-width: 500px;
+}
+
+.goals-wrap ul{
+    display: flex;
+    flex-flow: column;
+    row-gap: 10px;
+}
