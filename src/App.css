@@ -2,6 +2,7 @@
     --pink: #ffafcc;
     --darkred: #780000;
     --extradarkred: #540b0e;
+    --sky: #bde0fe;
 }
 .container{
     display: flex;
