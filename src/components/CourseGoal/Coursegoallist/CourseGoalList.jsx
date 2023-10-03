@@ -6,7 +6,7 @@ const CourseGoalList = (props) => {
     <div className="goals-wrap">
       <ul>
         {props.items.map((goal) => (
-          <CourseGoalItem key={goal.id} id={goal.id} text={goal.text}/>
+          <CourseGoalItem key={goal.id} id={goal.id} text={goal.text} onDelete={props.onDeleteItem}/>
         ))}
       </ul>
     </div>

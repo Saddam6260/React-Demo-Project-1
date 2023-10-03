@@ -20,10 +20,27 @@ const App = () => {
     });
   };
 
+  const deleteItemHandler = (goalId) => {
+    setCourseGoal(prevGoals => {
+      const updatedGoals = prevGoals.filter(goals => goals.id !== goalId);
+      return updatedGoals;
+    })
+  }
+
+  let content = (
+    <p className="alert">No Such items here</p>
+  )
+
+  if(coursegoal.length > 0) { 
+    content = (
+      <CourseGoalList items={coursegoal} onDeleteItem={deleteItemHandler}/>
+    )
+  }
+
   return (
     <div className="container">
       <CourseGoalInput addGoal={addGoalHandler} />
-      <CourseGoalList items={coursegoal} />
+      {content}
     </div>
   );
 };

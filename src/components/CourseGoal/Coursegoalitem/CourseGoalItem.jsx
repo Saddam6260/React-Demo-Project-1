@@ -1,7 +1,11 @@
 import "./CourseGoalItem.css"
 
 const CourseGoalItem = (props) => {
-    return <li className="goalitem">{props.text}</li>
+
+    const deleteHandler = () => {
+        props.onDelete(props.id)
+    }
+    return <li className="goalitem" onClick={deleteHandler}>{props.text}</li>
 }
 
 export default CourseGoalItem
