@@ -18,7 +18,12 @@
     row-gap: 5px;
     width: 100%;
 }
-.form .input-wrap input{
+
+.input-wrap label{
+    color: var(--darkred);
+}
+
+.input-wrap input{
     padding: 5px;
     border: .5px solid black;
     outline: none;
@@ -28,6 +33,6 @@
     background-color: var(--sky);
 }
 
-.form .invalid .input-wrap input{
-    background-color: var(darkred);
+.input-wrap.invalid input{
+    background-color: var(--darkred);
 }
