@@ -1,5 +1,6 @@
 import "./App.css";
-import CourseGoalInput from "./components/CourseGoal/Coursegoalform/CourseGoalInput";
+
+import CourseGoalInput from "./components/CourseGoal/CourseGoalInput/CourseGoalinput";
 import CourseGoalList from "./components/CourseGoal/Coursegoallist/CourseGoalList";
 
 const App = () => {
@@ -10,7 +11,7 @@ const App = () => {
 
   return (
     <div className="container">
-      <CourseGoalInput />
+      <CourseGoalInput/>
       <CourseGoalList items={goalItems} />
     </div>
   );
